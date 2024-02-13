@@ -19,22 +19,40 @@
         <div>
             <div class="flex">
                 <!-- Calculate Card -->
-                <div class="flex-1 grid grid-cols-3">
-                    <!-- Card-One -->
+                <div class="flex-1 grid grid-cols-2">
+                    <!-- Trangle Card- -->
                     <div class="card w-96 bg-base-100 shadow-xl text-center">
                         <figure><img src="images/triangle.png" alt="Shoes" /></figure>
                         <div class="card-body">
-                          <h2 class="text-center text-3xl font-bold">Triangle</h2>
+                          <h2 class="text-center text-3xl font-bold">Trecangle</h2>
                           <p>Area (A) = 0.5 X b X h?</p>
                           <p class="text-xl">Result : <span id="result-trangle"> </span> <span>cm <sup>2</sup></span></p>
                           <div class="mb-2">
-                            <input id="trangle-base" class="w-24 p-2 rounded-lg bg-slate-300" type="text" placeholder="b">
+                            <input id="trangle-base" class="w-24 p-2 rounded-lg bg-slate-300" type="text" placeholder="base">
                           <span class="mr-2 ml-2">cm</span>
-                            <input id="trangle-height" class="w-24  p-2 rounded-lg bg-slate-300" type="text" placeholder="h">
+                            <input id="trangle-height" class="w-24  p-2 rounded-lg bg-slate-300" type="text" placeholder="height">
                           <span class="ml-2">cm</span>
                           </div>
                           <div class="card-actions">
                             <button onclick="calculateInputValue()" class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Retrangle Card -->
+                      <div class="card w-96 bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="text-center text-3xl font-bold">Retrangle</h2>
+                          <p>Area (A) = Area (A) = w X I </p>
+                          <p class="text-xl">Result : <span id="result-rectangle"> </span> <span>cm <sup>2</sup></span></p>
+                          <div class="mb-2">
+                            <input id="rectangle-width" class="w-24 p-2 rounded-lg bg-slate-300" type="text" placeholder="width">
+                          <span class="mr-2 ml-2">cm</span>
+                            <input id="rectangle-length" class="w-24  p-2 rounded-lg bg-slate-300" type="text" placeholder="length">
+                          <span class="ml-2">cm</span>
+                          </div>
+                          <div class="card-actions">
+                            <button onclick="rectangleAreaInput()" class="btn btn-primary w-full">Calculate</button>
                           </div>
                         </div>
                       </div>
@@ -52,6 +70,7 @@
     <footer>
 
     </footer>
+    <script src="js/rectangle.js"></script>
     <script src="js/js-one.js"></script>
 </body>
 
