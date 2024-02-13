@@ -1,17 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme='light' lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Practise</title>
+    <!-- Daisuu Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+
+<body class="px-10 py-10">
     <header>
 
     </header>
 
     <main>
-
+        <div>
+            <div class="flex">
+                <!-- Calculate Card -->
+                <div class="flex-1 grid grid-cols-3">
+                    <!-- Card-One -->
+                    <div class="card w-96 bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="text-center text-3xl font-bold">Triangle</h2>
+                          <p>Area (A) = 0.5 X b X h?</p>
+                          <p class="text-xl">Result : <span id="result-trangle"> </span> <span>cm <sup>2</sup></span></p>
+                          <div class="mb-2">
+                            <input id="trangle-base" class="w-24 p-2 rounded-lg bg-slate-300" type="text" placeholder="b">
+                          <span class="mr-2 ml-2">cm</span>
+                            <input id="trangle-height" class="w-24  p-2 rounded-lg bg-slate-300" type="text" placeholder="h">
+                          <span class="ml-2">cm</span>
+                          </div>
+                          <div class="card-actions">
+                            <button onclick="calculateInputValue()" class="btn btn-primary w-full">Calculate</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <!-- Calculate Result -->
+                <div>
+                    <div class="min-w-80 h-[450px] border-2 border-gray-100 rounded-xl p-4">
+                        <h3 class="text-black text-center font-bold text-3xl mt-6">Area Calculation</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -19,4 +54,5 @@
     </footer>
     <script src="js/js-one.js"></script>
 </body>
+
 </html>
